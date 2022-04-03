@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--设置mybatis输出日志-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <typeAliases>
+        <package name="com.zzw.pojo"/>
+    </typeAliases>
+    <!--分页插件的配置-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"/>
+    </plugins>
+
+   <mappers>
+       <mapper class="com.zzw.dao.AdminMapper"/>
+       <mapper class="com.zzw.dao.ProductInfoMapper"/>
+       <mapper class="com.zzw.dao.ProductTypeMapper"/>
+   </mappers>
+
+</configuration>
