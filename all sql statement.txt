@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('1', 'admin', '202cb962ac59075b964b07152d234b70');
+INSERT INTO `admin` VALUES ('1', 'admin', 'c984aed014aec7623a54f0591da07a85fd4b762d');
 
 -- ----------------------------
 -- Table structure for carshop
